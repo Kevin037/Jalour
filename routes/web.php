@@ -160,6 +160,7 @@ Route::group(['middleware' => 'verified','customer'],function(){
     Route::post('/update_pembayaran{id}',[TransaksiController::class,'update_pembayaran']);
     Route::get('/provinsi/{id}/kota',[TransaksiController::class,'Kota']);
     Route::post('/pengiriman_pembayaran',[TransaksiController::class,'checkout']);
+    Route::post('/bayar_midtrans',[TransaksiController::class,'store']);
     Route::post('/tambah_checkout',[TransaksiController::class,'tambah']);
     Route::get('/checkout_selesai',[TransaksiController::class,'checkout_selesai']);
     Route::get('/pesanan_diterima{id}',[TransaksiController::class,'pesanan_diterima']);

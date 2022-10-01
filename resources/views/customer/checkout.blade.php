@@ -88,8 +88,8 @@
                       setTimeout("preventBack()", 0);
                       window.onunload=function(){null};
                       </script> --}}
-                     <form action="/tambah_checkout" method="POST" class="row g-3">
-                      {{-- <form action="" id="tambah_checkout" class="row g-3"> --}}
+                     {{-- <form action="/tambah_checkout" method="POST" class="row g-3"> --}}
+                      <form action="#" id="tambah_checkout" method="POST" class="row g-3">
                          @csrf
                          <input type="hidden" name="nama" id="nama" value="{{ $nama }}">
                          <input type="hidden" name="no_wa" id="no_wa" value="{{ $no_wa }}">
@@ -519,6 +519,56 @@
       });
     });
     </script>
+     <script src="{{
+      !config('services.midtrans.isProduction') ? 'https://app.sandbox.midtrans.com/snap/snap.js' : 'https://app.midtrans.com/snap/snap.js' }}"
+      data-client-key="{{ config('services.midtrans.clientKey')
+    }}"></script>
+    <script>
+      $("#tambah_checkout").submit(function(event) {
+          event.preventDefault();
+          var nama= $('input#nama').val()
+          alert (nama)
+          return false
+          $.post("/bayar_midtrans", {
+              _method: 'POST',
+              _token: '{{ csrf_token() }}',
+              // donor_name: $('input#donor_name').val(),
+              // donor_email: $('input#donor_email').val(),
+              // donation_type: $('select#donation_type').val(),
+              // amount: $('input#amount').val(),
+              // note: $('textarea#note').val(),
+              nama: $('input#nama').val(),
+              no_wa: $('no_wa').val(),
+              alamat_tujuan: $('alamat_tujuan').val(),
+              kota_tujuan: $('kota_tujuan').val(),
+              provinsi_tujuan: $('provinsi_tujuan').val(),
+              kode_pos: $('kode_pos').val(),
+              data_kurir: $('data_kurir').val(),
+              jumlah_pembelian: $('jumlah_pembelian').val(),
+          },
+
+          function (data, status) {
+              alert(data)
+              return false
+              console.log(data);
+              snap.pay(data.snap_token, {
+                  // Optional
+                  onSuccess: function (result) {
+                      location.reload();
+                  },
+                  // Optional
+                  onPending: function (result) {
+                      location.reload();
+                  },
+                  // Optional
+                  onError: function (result) {
+                      location.reload();
+                  }
+              });
+              return false;
+          })
+        })
+  </script>
     
 @endsection
 @endsection

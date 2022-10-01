@@ -30,7 +30,6 @@ class TransaksiController extends Controller
         \Midtrans\Config::$isProduction = config('services.midtrans.isProduction');
         \Midtrans\Config::$isSanitized = config('services.midtrans.isSanitized');
         \Midtrans\Config::$is3ds = config('services.midtrans.is3ds');
-
     }
 
     public function checkout(Request $request){
@@ -227,71 +226,69 @@ public function form_konfirmasi($id){
       return redirect('/histori_pesanan');
   }
 
-  // MIDTRANS =======================================
-    public function bayar_midtrans(Request $request){
-      // \DB::Transaksi(function() use($request) {
+    // MIDTRANS =======================================
+    public function store(Request $request)
+    {
+      // echo"test";
+      // die;
+        //   DB::transaction(function() use($request) {
 
-      $id_transaksi_cek = Transaksi::max('id');
-      $id_destinasi_cek = Destinasi::max('id_destinasi');
+        //   $id_transaksi_cek = Transaksi::max('id');
+        //   $id_destinasi_cek = Destinasi::max('id_destinasi');
 
-      self::$id_user = auth()->user()->id;
-      self::$id_transaksi_baru = $id_transaksi_cek+1;
-      self::$id_destinasi_baru = $id_destinasi_cek+1;
-      self::$kode_transaksi='#TR21'.self::$id_transaksi_baru;
-      
-      Transaksi::update_transaksi_id();
-      Transaksi::update_status_keranjang();
-      self::$net_profit = Transaksi::net_profit();
-      self::$tgl_transaksi=Date('Y-m-d H:i');
-      self::$tgl_jatuh_tempo=date('Y-m-d H:i', strtotime('+1 days', strtotime(self::$tgl_transaksi)));
-      self::$request=$request;
-      
-      Transaksi::tambah_transaksi();
-      Destinasi::tambah();
+        //   self::$id_user = auth()->user()->id;
+        //   self::$id_transaksi_baru = $id_transaksi_cek+1;
+        //   self::$id_destinasi_baru = $id_destinasi_cek+1;
+        //   self::$kode_transaksi='#TR21'.self::$id_transaksi_baru;
 
-        // $donation = Transaksi::create([
-        //     'donor_name' => $request->donor_name,
-        //     'donor_email' => $request->donor_email,
-        //     'donation_type' => $request->donation_type,
-        //     'amount' => floatval($request->amount),
-        //     'note' => $request->note,
-        // ]);
-        $email = User::find(auth()->user()->id);
+        //   Transaksi::update_transaksi_id();
+        //   Transaksi::update_status_keranjang();
+        //   self::$net_profit = Transaksi::net_profit();
+        //   self::$tgl_transaksi=Date('Y-m-d H:i');
+        //   self::$tgl_jatuh_tempo=date('Y-m-d H:i', strtotime('+1 days', strtotime(self::$tgl_transaksi)));
+        //   self::$request=$request;
+          
+        //   $transaksi = Transaksi::tambah_transaksi();
+        //   $destinasi = Destinasi::tambah();
 
-        $payload = [
-            'transaction_details' => [
-                'order_id'      => self::$id_transaksi_baru,
-                'gross_amount'  => $request->biaya_final,
-            ],
-            'customer_details' => [
-                'first_name'    => $request->nama,
-                'email'         => $email->email,
-                'phone'         => $request->no_wa,
-                'address'       => $request->alamat_tujuan,
-            ],
-            // 'item_details' => [
-            //     [
-            //         'id'       => 9999,
-            //         'price'    => 10000,
-            //         'quantity' => 1,
-            //         'name'     => ucwords(str_replace('_', ' ', $donation->donation_type))
-            //     ]
-            // ]
-        ];
-        $snapToken = \Midtrans\Snap::getSnapToken($payload);
-        // $donation->snap_token = $snapToken;
-        // $donation->save();
+        //     // $donation = Donation::create([
+        //     //     'donor_name' => $request->donor_name,
+        //     //     'donor_email' => $request->donor_email,
+        //     //     'donation_type' => $request->donation_type,
+        //     //     'amount' => floatval($request->amount),
+        //     //     'note' => $request->note,
+        //     // ]);
 
-        $this->response['snap_token'] = $snapToken;
-    // });
+        //     $payload = [
+        //         'transaction_details' => [
+        //             // 'order_id'      => $transaksi->kode_transaksi,
+        //             // 'gross_amount'  => $transaksi->biaya_transaksi,
+        //             'order_id'      => "test123",
+        //             'gross_amount'  => 80000,
+        //         ],
+        //         'customer_details' => [
+        //             'first_name'    => $request->nama,
+        //             'email'         => "ksatria708@gmail.com",
+        //             // 'phone'         => '08888888888',
+        //             // 'address'       => '',
+        //         ],
+        //         'item_details' => [
+        //             [
+        //                 'id'       => "99",
+        //                 'price'    => 90000,
+        //                 'quantity' => 1,
+        //                 'name'     => "Beli kaos"
+        //             ]
+        //         ]
+        //     ];
+        //     // $snapToken = Veritrans_Snap::getSnapToken($payload);
+        //     // $transaksi->snap_token = $snapToken;
+        //     // $transaksi->save();
 
-    return response()->json($this->response);
+        //     $this->response['snap_token'] = $snapToken;
+        // });
+        $this->response['snap_token'] = $request->nama;
+        return response()->json($this->response);
     }
-
-    // public function test(Request $request)
-    // {   
-    //     $test = $request->input('kode_pos');
-    //     return response()->json($test);
-    // }
     // MIDTRANS =======================================
 }
