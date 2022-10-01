@@ -1,0 +1,198 @@
+@media screen and (min-width: 1201px) {
+/* LANDING PAGE */
+section #edu-2{
+  margin-top: -5% !important;
+} 
+
+.section-testimoni{
+  /* margin-top: 3% !important; */
+}
+.pilihan_produk-m{
+  display: none;
+}
+.owl-theme .owl-dots .owl-dot{display:none;zoom:1}
+  /* LANDING PAGE */
+}
+
+
+
+@media screen and (min-width: 992px) {
+/* sidebar-filter  ===================================*/
+.sidebar-filter p{
+  color: rgb(160, 160, 160);
+}
+.sidebar-filter {
+  height: 40%;
+  width: 60%;
+  position: relative;
+  background-color:white;
+  margin: 20px 0 0 50px;
+}
+
+.sidebar-filter .model-container a{
+  padding: 6px 8px 6px 6px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #727272;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.sidebar-filter #model-btn{
+  text-decoration: none;
+  color: rgb(160, 160, 160);
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.sidebar-filter a:hover{
+  color: rgb(41, 41, 41);
+}
+
+.sidebar-filter > .model-container{
+  max-height: 800px;
+  visibility: visible;
+}
+.model-container {
+  display: flex;
+  display: block;
+  flex-direction:column;
+  margin-left: 15px;
+  overflow: hidden;
+  max-height: 0;
+  /* transition: all 0.4s ease-in-out; */
+}
+.sidebar-filter a span{
+  float: right;
+  margin-top: 10px;
+  transform:translateY(-50%);
+  transition:transform 0.4s;
+}
+.sidebar-filter a span.rotate{
+  transform: translateY(-50%)rotate(-180deg);
+}
+#model-show.show{
+  display: none;
+}
+#harga-show.show{
+  display: none;
+}
+/* ================================  sidebar-filter */
+
+/* List produk =====================================*/
+.listproduk{
+  margin: -40px 0px 0px -80px;
+  width: 100%;
+  transition: .4s ease all;
+}
+.sidebar-filter-mob{
+  display: none;
+}
+#check-filter{
+  display: none;
+}
+#label_kotak_filter{
+  display: none;
+}
+.listproduk .item_produk{
+  margin-top: 1px;
+  width: 100%;
+}
+/* List produk =====================================*/
+}
+
+
+
+
+
+@media screen and (min-width: 801px) {
+
+       #banner-1{
+         width: 100%;
+         height: 100vh;
+         background: url('img/testing/katalog/banner1.jpg');
+         background-size: 100%;
+         background-repeat: no-repeat;
+       }
+       #banner-2{
+         width: 100%;
+         height: 100vh;
+         background: url('img/testing/katalog/banner2.jpg');
+         background-size: 100%;
+         background-repeat: no-repeat;
+       }
+       #banner-3{
+         width: 100%;
+         height: 100vh;
+         background: url('img/testing/katalog/banner3.jpg');
+         background-size: 100%;
+         background-repeat: no-repeat;
+       }
+       .button_banner {
+         border-radius: 2px;
+         background-color: black;
+         border: none;
+         color: white;
+         text-align: center;
+         font-size: 22px;
+         padding: 12px;
+         width: 200px;
+         transition: all 0.5s;
+         cursor: pointer;
+         /* margin: 36px; */
+         margin: 26% 0 0 47%;
+         box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+       }
+       
+       .button_banner{
+         cursor: pointer;
+         display: inline-block;
+         position: relative;
+         transition: 0.5s;
+       }
+       .button_banner:after {
+         content: '»';
+         position: absolute;
+         opacity: 0;  
+         top: 12px;
+         right: -20px;
+         transition: 0.1s;
+       }
+       
+       .button_banner:hover{
+         padding-right: 24px;
+         padding-left:8px;
+         background-color: white;
+         color: black;
+       }
+       
+       .button_banner:hover:after {
+         opacity: 1;
+         right: 10px;
+       }
+     
+  /* NAVBAR WEB  ===================================*/
+  .dropdown_navbar:hover>.dropdown_menu_navbar{
+   display:block;
+   }
+   nav ul li a span{
+       padding: 0 10px; 
+       position:absolute;
+       top:50%;
+       transform:translateY(-50%);
+       font-size:12px;
+       transition:transform 0.4s;
+     }
+     nav ul li a:hover span{
+       transform:translateY(-50%)rotate(-180deg);
+     }  
+     /* ================================  NAVBAR WEB */
+ 
+
+ }

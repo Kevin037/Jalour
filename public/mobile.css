@@ -1,0 +1,369 @@
+@media screen and (max-width: 800px) {
+
+/* LOGIN */
+.border_login{
+  margin: 3% 10% 30% 10%;
+}
+.bg_login{
+  margin: 20% 6% 30% 6%;
+}
+
+/* LOGIN */
+
+    
+    #banner-2{
+      width: 100%;
+      height: 100vh;
+      background: url('img/testing/katalog/banner2_m.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    #banner-3{
+      width: 100%;
+      height: 100vh;
+      background: url('img/testing/katalog/banner3_m.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .button_banner {
+      border-radius: 2px;
+      background-color: black;
+      border: none;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      padding: 12px;
+      width: 150px;
+      transition: all 0.5s;
+      cursor: pointer;
+      /* margin: 36px; */
+      margin: 50% 0 0 0%;
+      box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    }
+    
+    .button_banner{
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    .button_banner:after {
+      content: '»';
+      position: absolute;
+      opacity: 0;  
+      top: 12px;
+      right: -20px;
+      transition: 0.1s;
+    }
+    
+    .button_banner:hover{
+      padding-right: 24px;
+      padding-left:8px;
+      background-color: white;
+      color: black;
+    }
+    
+    .button_banner:hover:after {
+      opacity: 1;
+      right: 10px;
+    }
+    .pilihan_produk{
+      display: none;
+    }
+    
+    #pilihan_tshirt-m{
+      width: 100%;
+        height: 100vh;
+        background: url(img/testing/pilihan_tshirt.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #pilihan_hoodie-m{
+      width: 100%;
+        height: 100vh;
+        background: url(img/testing/pilihan_hoodie.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #pilihan_crewneck-m{
+      width: 100%;
+        height: 100vh;
+        background: url(img/testing/pilihan_crewneck.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .owl-dots-dots .owl-dots{
+      position: relative;
+      z-index: 11111111;
+      display: block;
+    }
+    section #edu-2{
+      margin-top: 10%;
+    } 
+    section #edu-2 .capt-edu-2{
+      margin-top: -14%;
+    } 
+    .produk_terlaris{
+        margin-top: 5%;
+      }
+      .section-testimoni{
+        margin-top: -40%;
+      }
+
+      .owl-dots-dots .owl-dots{
+        margin-top: -90%;
+        margin-bottom: 90%;
+      }
+
+     
+      /* NAVBAR MOBILE  ====================================*/
+      nav ul li a span{
+        float:right;
+        margin-top: 10px;
+        padding: 0 10px; 
+        /* position:absolute; */
+        top:50%;
+        right:20px;
+        transform:translateY(-50%);
+        font-size:22px;
+        transition:transform 0.4s;
+      }
+      nav ul li a:hover span{
+        transform:translateY(-50%)rotate(-180deg);
+      }
+      /* ==================================== NAVBAR MOBILE */
+    
+      .pilihan_produk-m{
+        /* margin-bottom: -70%; */
+      }
+      .pilihan_produk-m section{
+        opacity: 80%;
+      }
+      .pilihan_produk-m section:hover{
+        opacity: 100%;
+      }
+      .owl-non-dots .owl-dots .owl-dot{display:none;zoom:1}
+      .owl-dots-dots .owl-dots .owl-dot{display:inline-flex;zoom:1
+      }
+    .owl-dots-dots{
+      position: absolute;
+    }
+      .owl-dot:hover,
+      .owl-dot.active{
+        background: white!important;
+      }
+    
+      .item-testi{
+        display: flex;
+        /* flex-direction: row; */
+        /* width: 450px;
+        height: 150px; */
+      }
+    
+      .owl-dot{
+        height: 15px;
+        width: 45px;
+        border-radius: 25px;
+        cursor: pointer;
+        outline: none;
+        margin: 0 5px;
+        border: 2px solid white!important; 
+      }
+      .capt-testi h6{
+        font-size: 8pt;
+        /* transform: rotateY(180deg); */
+      }
+    
+      .gambar-testi{
+        /* width: 100%; */
+        /* float: left;
+        order: 1; */
+        /* margin: 0 auto; */
+        /* transform: rotateY(180deg); */
+      }
+    
+      #check:checked ~ nav{
+      opacity:20%;
+    }
+    #check:checked ~ section{
+      opacity:20%;
+    }     
+  }
+
+
+
+@media screen and (max-width: 991px) {
+        
+         /* SIDEBAR FILTER MOB ================================== */
+  
+
+      .sidebar-filter-mob a,p{
+        color: rgb(160, 160, 160) !important;
+        padding-left: 5px !important;
+      }
+      
+      .sidebar-filter-mob > .model-container{
+        max-height: 800px !important;
+        visibility: visible !important;
+      }
+      #label_kotak_filter{
+        margin-top: 20px ;
+        width: 60%;
+      }
+      label #btn-filter{
+        /* margin: 4px 0 4px 0; */
+        /* cursor:pointer; */
+        /* position: absolute; */
+        
+      }
+          
+       /* SIDEBAR FILTER MOB */
+    
+    .sidebar-filter-mob {
+      position: fixed !important;
+      background: white !important;
+      transition: all .5s ease !important;
+      z-index: 1111 !important;
+      display:block !important;
+      left: -280px !important;
+      width: 280px !important;
+      height: 100% !important;
+    }
+    
+    .sidebar-filter-mob .model-container a{
+      padding: 6px 8px 6px 6px !important;
+      font-size: 20px !important;
+      color: #727272 !important;
+      display: block !important;
+      border: none !important;
+      background: none !important;
+      width: 100% !important;
+      text-align: left !important;
+      cursor: pointer !important;
+      outline: none !important;
+      text-decoration: none !important;
+    }
+    .model-container {
+      margin-left: 15px !important;
+      max-height: 0 !important;
+      display: flex !important;
+      display: block !important;
+      flex-direction:column !important;
+      overflow: hidden !important;
+    }
+    
+    .sidebar-filter-mob a span{
+      margin-top: 10px !important;
+      margin-left: -25px !important;
+      float: right !important;
+      transform:translateY(-50%) !important;
+      transition:transform 0.4s !important;
+    }
+    .sidebar-filter-mob header {
+      font-size: 22px !important;
+      line-height: 70px !important;
+      text-align: center !important;
+      background: white !important;
+      user-select: none !important;  
+      color: rgb(92, 92, 92) !important;
+    }
+    label #cancel-filter{
+      margin-right: 10px !important;
+      top: 17px !important;
+      font-size: 25px !important;
+      padding: 4px 9px !important;
+      z-index: 1111 !important;
+      color: rgb(92, 92, 92) !important;
+      transition: all .5s ease !important;
+      border: 1px solid rgb(92, 92, 92) !important;
+      border-radius: 10px !important;
+    }
+    
+    .sidebar-filter{
+      display: none !important;
+      }
+      #check-filter{
+        display: none !important;
+      }
+    
+      .sidebar-filter-mob #model-btn-mob{
+          text-decoration: none !important;
+          color: rgb(160, 160, 160) !important;
+          display: block !important;
+          width: 100% !important;
+          text-align: left !important;
+          cursor: pointer !important;
+          outline: none !important;
+        }
+        .sidebar-filter-mob a:hover{
+          color: rgb(41, 41, 41) !important;
+        }
+    
+        .sidebar-filter-mob a span.rotate{
+          transform: translateY(-50%)rotate(-180deg) !important;
+        }
+        #model-show-mob.show{
+          display: none !important;
+        }
+    
+        .sidebar-filter-mob label{
+          color: black !important;
+        }
+        #check-filter:checked ~ section .listproduk{
+          cursor: not-allowed !important;
+          pointer-events: none !important;
+          opacity: 20% !important;
+          position:fixed !important;
+        }
+        #check-filter:checked ~ nav{
+          cursor: not-allowed !important;
+          pointer-events: none !important;
+          opacity: 20% !important;
+        }
+        #check-filter:checked ~ #off-keranjang{
+          position:fixed;
+          opacity:20%;
+          cursor: not-allowed;
+          pointer-events: none;
+        }
+    
+        #btn-filter:hover {
+          color:grey !important;
+          }
+          
+          label #cancel:hover{
+            color:grey !important;
+          }
+    
+          #check-filter:checked ~ .sidebar-filter-mob{
+              left: 0px !important;
+          }
+    
+          .filter-hargam{
+            background-color: rgb(94, 94, 94) !important;
+            border-radius: 20px !important;
+            color: white !important;
+            cursor: pointer !important;
+            text-align: center !important;
+            }
+            .filter-hargam:hover{
+              opacity: 50% !important;
+            }
+            nav label #btn-keranjang{
+              cursor: none !important;
+            }
+
+            .listproduk .item_produk{
+              margin-top: 20px !important;
+              width: 100% !important;
+            }
+            .filter-hargam{
+              height: 35px !important;
+              width: 220px !important;
+              margin-top: 20px !important;
+            padding: 3px 0 3px 0 !important;
+            }
+
+      /* =============================  SIDEBAR FILTER MOB*/
+    }

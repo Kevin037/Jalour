@@ -1,0 +1,314 @@
+#banner-1{
+    width: 100%;
+    height: 100vh;
+    background: url('img/testing/katalog/banner1_m.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #banner-2{
+    width: 100%;
+    height: 100vh;
+    background: url('img/testing/katalog/banner2_m.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #banner-3{
+    width: 100%;
+    height: 100vh;
+    background: url('img/testing/katalog/banner3_m.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .button_banner {
+    border-radius: 2px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 12px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    /* margin: 36px; */
+    margin: 56% 0 0 25%;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  .button_banner{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .button_banner:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 12px;
+    right: -20px;
+    transition: 0.1s;
+  }
+  
+  .button_banner:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    background-color: white;
+    color: black;
+  }
+  
+  .button_banner:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  .pilihan_produk{
+    display: none;
+  }
+
+  #pilihan_tshirt-m{
+    width: 100%;
+      height: 100vh;
+      background: url(img/testing/pilihan_tshirt.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  #pilihan_hoodie-m{
+    width: 100%;
+      height: 100vh;
+      background: url(img/testing/pilihan_hoodie.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  #pilihan_crewneck-m{
+    width: 100%;
+      height: 100vh;
+      background: url(img/testing/pilihan_crewneck.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+
+  .owl-dots-dots .owl-dots{
+    position: relative;
+    z-index: 11111111;
+    display: block;
+  }
+
+  /* NAVBAR MOBILE  ====================================*/
+  nav ul li a span{
+    float:right;
+    margin-top: 10px;
+    padding: 0 10px; 
+    /* position:absolute; */
+    top:50%;
+    right:20px;
+    transform:translateY(-50%);
+    font-size:22px;
+    transition:transform 0.4s;
+  }
+  nav ul li a:hover span{
+    transform:translateY(-50%)rotate(-180deg);
+  }
+  /* ==================================== NAVBAR MOBILE */
+
+  .pilihan_produk-m{
+    /* margin-bottom: -70%; */
+  }
+  .pilihan_produk-m section{
+    opacity: 80%;
+  }
+  .pilihan_produk-m section:hover{
+    opacity: 100%;
+  }
+  .owl-non-dots .owl-dots .owl-dot{display:none;zoom:1}
+  .owl-dots-dots .owl-dots .owl-dot{display:inline-flex;zoom:1
+  }
+.owl-dots-dots{
+  position: absolute;
+}
+  .owl-dot:hover,
+  .owl-dot.active{
+    background: white!important;
+  }
+
+  .item-testi{
+    display: flex;
+    /* flex-direction: row; */
+    /* width: 450px;
+    height: 150px; */
+  }
+
+  .owl-dot{
+        height: 15px;
+        width: 45px;
+        border-radius: 25px;
+        cursor: pointer;
+        outline: none;
+        margin: 0 5px;
+        border: 2px solid white!important; 
+      }
+      .capt-testi{
+        float: right;
+        order: 2;
+        /* transform: rotateY(180deg); */
+      }
+    
+      .gambar-testi{
+        width: 50px;
+        float: left;
+        order: 1;
+        margin: 0 auto;
+        /* transform: rotateY(180deg); */
+      }
+    
+      #check:checked ~ nav{
+      opacity:20%;
+    }
+    #check:checked ~ section{
+      opacity:20%;
+    }
+
+    .owl-dot{
+        height: 15px;
+        width: 45px;
+        border-radius: 25px;
+        cursor: pointer;
+        outline: none;
+        margin: 0 5px;
+        border: 2px solid white!important; 
+      }
+      .capt-testi{
+        float: right;
+        order: 2;
+        /* transform: rotateY(180deg); */
+      }
+    
+      .gambar-testi{
+        width: 50px;
+        float: left;
+        order: 1;
+        margin: 0 auto;
+        /* transform: rotateY(180deg); */
+      }
+    
+      #check:checked ~ nav{
+      opacity:20%;
+    }
+    #check:checked ~ section{
+      opacity:20%;
+    }
+
+
+    /* SIDEBAR FILTER MOB */
+
+    .sidebar-filter-mob {
+        position: fixed;
+        background: white;
+        transition: all .5s ease;
+        z-index: 1111;
+        display:block;
+      }
+      
+      .sidebar-filter-mob .model-container a{
+        color: #727272;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+      }
+      .model-container {
+        display: flex;
+        display: block;
+        flex-direction:column;
+        overflow: hidden;
+      }
+      
+      .sidebar-filter-mob a span{
+        float: right;
+        transform:translateY(-50%);
+        transition:transform 0.4s;
+      }
+
+      .sidebar-filter-mob header {
+        text-align: center;
+        background: white;
+        user-select: none;  
+        color: rgb(92, 92, 92);
+      }
+      label #cancel-filter{
+        z-index: 1111;
+        color: rgb(92, 92, 92);
+        transition: all .5s ease;
+        border: 1px solid rgb(92, 92, 92);
+        border-radius: 10px;
+      }
+
+    .sidebar-filter{
+        display: none;
+        }
+        #check-filter{
+          display: none;
+        }
+
+        .sidebar-filter-mob #model-btn-mob{
+            text-decoration: none;
+            color: rgb(160, 160, 160);
+            display: block;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+          }
+          .sidebar-filter-mob a:hover{
+            color: rgb(41, 41, 41);
+          }
+
+          .sidebar-filter-mob a span.rotate{
+            transform: translateY(-50%)rotate(-180deg);
+          }
+          #model-show-mob.show{
+            display: none;
+          }
+
+          .sidebar-filter-mob label{
+            color: black;
+          }
+          #check-filter:checked ~ section .listproduk{
+            cursor: not-allowed;
+            pointer-events: none;
+            opacity: 20%;
+            position:fixed;
+          }
+          #check-filter:checked ~ nav{
+            cursor: not-allowed;
+            pointer-events: none;
+            opacity: 20%;
+          }
+
+          #btn-filter:hover {
+            color:grey;
+            }
+            
+            label #cancel:hover{
+              color:grey;
+            }
+
+            #check-filter:checked ~ .sidebar-filter-mob{
+                left: 0px;
+            }
+            .filter-hargam{
+                background-color: rgb(94, 94, 94);
+                border-radius: 20px;
+                color: white;
+                cursor: pointer;
+                text-align: center;
+                }
+                .filter-hargam:hover{
+                    opacity: 50%;
+                  }
+                  nav label #btn-keranjang{
+                    cursor: none;
+                  }

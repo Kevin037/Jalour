@@ -1,0 +1,9 @@
+? Perhitungan total biaya chekout
+? Detail keranjang salah link
+? Google Auth
+Menunggu verifikasi admin
+================ RENEW PROJECT =======================
+- Penerapan OOP
+- Payment Gateway 
+- Notifikasi email
+- Penerapan RESTFUL API

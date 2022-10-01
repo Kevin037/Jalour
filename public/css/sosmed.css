@@ -1,0 +1,16 @@
+.sosmed{padding:0;margin:0;position:fixed;right:-119px;top:20%;width:200px}
+.sosmed input#hideshare,.sosmed input#openall{display:none}
+.sosmed ul,.sosmed ul li{list-style:none;list-style-type:none}
+.sticky li.openall{margin:0;padding:0}
+.sticky li.share{background-color:#333;color:#efefef;height:43px;padding:0;margin:0 0 1px 0;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out;cursor:pointer}
+.sticky li.share:hover{margin-left:-10px;-webkit-transform:translateX(-115px);-moz-transform:translateX(-115px);-o-transform:translateX(-115px);-ms-transform:translateX(-115px);transform:translateX(-115px)}
+.sticky li.share i{float:left;margin:11px;margin-right:15px;color:white;font-size:20px}
+.sticky li.share b{padding:0;margin:0;text-transform:uppercase;line-height:43px}
+.sticky li a{text-decoration:none;color:white}
+.sosmed li.twitter{background: linear-gradient(to right, #f46f30,#7232bd)}
+.sosmed li.whatsapp{background:#25D366}
+input:checked#hideshare ~ li.share,input:checked#hideshare ~ li.openall{display:none}
+label span.show,.sosmed li.openall label{position:relative;cursor:pointer;display:block;width:43px;font-size:20px}
+.sosmed li.openall label{text-align:center;background:#bbb;color:white}
+input:checked#hideshare ~ label span.show{padding:5px;text-align:center}
+input:checked#hideshare ~ label span.show:after{content:'f104'}

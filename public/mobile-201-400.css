@@ -1,0 +1,29 @@
+/* RESPONSIVE-MOBILE =============================================================================*/
+@media screen and (min-width:201px) and (max-width: 400px) {
+
+  /* LOGIN */
+.border_login{
+  margin: 3% 1% 30% 1%;
+}
+.bg_login{
+  margin: 40% 4% 60% 4%;
+}
+/* LOGIN */
+    section #edu-2{
+      margin-top: -70% !important;
+    } 
+    section #edu-2 .capt-edu-2{
+      margin-top: -14%;
+    } 
+    .produk_terlaris{
+        margin-top: 5%;
+      }
+      .section-testimoni{
+        margin-top: -80% !important;
+      }
+      .owl-dots-dots .owl-dots{
+        margin-top: -140% !important;
+        margin-bottom: 140% !important;
+      }
+        }
+    /* =========================================================================  RESPONSIVE-MOBILE*/

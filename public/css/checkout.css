@@ -1,0 +1,172 @@
+.full{
+    margin: 4% 10%;
+}
+.isi{
+  margin-top: 4%;
+}
+.btn-promo{
+  align-content: center;
+  background-color: black;
+  width: 90%;
+  margin-top: 35px;
+  padding-right: 50px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+.btn-promo:hover{
+  opacity: 85%;
+}
+.btn-promo p{
+  padding: 5px 10px;
+  text-align: center;
+  color: white !important;
+}
+
+@media screen and (max-width: 800px) {
+  .full{
+    margin: 4% 6%;
+  }
+  .isi{
+    margin-top: 8%;
+  }
+}
+/* @media screen and (max-width: 600px) {
+  
+  .isi{
+    margin: 12% -6% 0% -6%;
+  }
+} */
+
+
+a {
+    text-decoration: none;
+}
+.kanan{
+    border-left: 1px solid rgb(197, 197, 197);
+}
+
+@media screen and (max-width: 767px) {
+.kiri{
+  order: 2;
+}
+.kanan{
+  order: 1;
+  border: 1px rgb(191, 191, 191) solid;
+}
+
+.bawah{
+  order: 2;
+}
+.total{
+  margin-top: 10px;
+}
+}
+
+
+
+.total{
+    border-bottom: 1px solid rgb(157, 157, 157);
+    padding-bottom: 20px;
+}
+.ikoiko{
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.iko{
+    margin-top: 13px;
+}
+
+.hasil_data_customer{
+    border: 1px rgb(202, 202, 202) solid;
+    border-radius: 3px;
+}
+.isi_hasil_data_customer{
+    margin: 15px;
+}
+
+.radiobtn {
+    position: relative;
+    display: block;
+  }
+  .radiobtn label {
+    display: block;
+    background: #ffffff;
+    color: #444;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 2px solid #a2a2a2;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .radiobtn label:after, .radiobtn label:before {
+    content: "";
+    position: absolute;
+    right: 11px;
+    top: 11px;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background: #e1e1e1;
+  }
+  .radiobtn label:before {
+    background: transparent;
+    transition: 0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s, 0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
+    z-index: 2;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: center;
+    width: 0;
+    height: 0;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNS4zIDEzLjIiPiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE0LjcuOGwtLjQtLjRhMS43IDEuNyAwIDAgMC0yLjMuMUw1LjIgOC4yIDMgNi40YTEuNyAxLjcgMCAwIDAtMi4zLjFMLjQgN2ExLjcgMS43IDAgMCAwIC4xIDIuM2wzLjggMy41YTEuNyAxLjcgMCAwIDAgMi40LS4xTDE1IDMuMWExLjcgMS43IDAgMCAwLS4yLTIuM3oiIGRhdGEtbmFtZT0iUGZhZCA0Ii8+PC9zdmc+);
+  }
+  .radiobtn input[type=radio] {
+    display: none;
+    position: absolute;
+    width: 100%;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  .radiobtn input[type=radio]:checked + label {
+    background: #e5f1e1;
+    -webkit-animation-name: blink;
+            animation-name: blink;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    border-color: #62bd46;
+  }
+  .radiobtn input[type=radio]:checked + label:after {
+    background: #59e72e;
+  }
+  .radiobtn input[type=radio]:checked + label:before {
+    width: 20px;
+    height: 20px;
+  }
+  
+  @-webkit-keyframes blink {
+   
+    100% {
+      background-color: #e5f1e1;
+    }
+  }
+  
+  @keyframes blink {
+    
+    100% {
+      background-color: #e5f1e1;
+    }
+  }
+
+  .halaman_info_bayar{
+    margin:0 10% 0 10%;
+  }
+
+  .info_bayar{
+    border: 2px rgb(114, 114, 114) dashed;
+    border-radius: 5px;
+  }
+
+
+  .konfirmasi_full{
+    margin: 3% 10% 5% 10%;
+  }
